@@ -6,7 +6,7 @@ import * as tf from '@tensorflow/tfjs-core';
 import '@tensorflow/tfjs-backend-webgl';
 import Webcam from 'react-webcam';
 
-import calculateHeadRotation from './utilities';
+import calculateHeadRotation from './calculateHeadRotation';
 
 function App() {
 
@@ -46,7 +46,9 @@ function App() {
     }
   }
 
+  // Run only on startup.
   useEffect(runMoveNet, []);
+
   return (
     <div className="App">
       <header className="App-header">
