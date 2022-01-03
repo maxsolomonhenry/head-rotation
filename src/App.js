@@ -9,6 +9,9 @@ import Webcam from 'react-webcam';
 import calculateHeadRotation from './utilities';
 
 function App() {
+
+  const [rotation, setRotation] = useState(0);
+
   const INFERENCES_PER_REFRESH_INTERVAL = 1;
   const PREDICTION_INTERVAL_MS = 200;
   const webcamRef = useRef(null);
@@ -19,6 +22,7 @@ function App() {
       poseDetection.SupportedModels.MoveNet, detectorConfig
     );
 
+    console.log('Starting setInterval...');
     setInterval(() => {
       detect(detector);
     }, PREDICTION_INTERVAL_MS);
@@ -37,18 +41,17 @@ function App() {
 
       if (isKeypointsDefined()) {
         const tmp = calculateHeadRotation(pose);
-        console.log(tmp);
+        setRotation(tmp);
       }
     }
   }
 
-  runMoveNet();
-
+  useEffect(runMoveNet, []);
   return (
     <div className="App">
       <header className="App-header">
-        {/* <p>Head rotation: {rotation.toFixed(4)}</p> */}
-        <Webcam ref={webcamRef} />
+        <p>Head rotation: {rotation.toFixed(4)}</p>
+        <Webcam ref={webcamRef} mirrored={true} />
       </header>
     </div>
   );
