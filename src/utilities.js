@@ -1,4 +1,15 @@
-export default function calculateHeadRotation(pose){
+export function convertRotationToMidiRange(rotationValue) {
+  // Clamp.
+  rotationValue = Math.min(1, rotationValue);
+  rotationValue = Math.max(-1, rotationValue);
+
+  // Scale to 0 - 127.
+  rotationValue = (rotationValue + 1) * 63.5;
+
+  return Math.round(rotationValue);
+}
+
+export function calculateHeadRotation(pose) {
 
   let nose = pose[0].keypoints[0];
   let leftEye = pose[0].keypoints[1];

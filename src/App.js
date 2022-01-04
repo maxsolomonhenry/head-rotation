@@ -5,8 +5,9 @@ import * as poseDetection from '@tensorflow-models/pose-detection';
 import * as tf from '@tensorflow/tfjs-core';
 import '@tensorflow/tfjs-backend-webgl';
 import Webcam from 'react-webcam';
+import { WebMidi } from 'webmidi';
 
-import calculateHeadRotation from './calculateHeadRotation';
+import { calculateHeadRotation, convertRotationToMidiRange } from './utilities';
 
 function App() {
 
@@ -14,21 +15,30 @@ function App() {
 
   const INFERENCES_PER_REFRESH_INTERVAL = 1;
   const PREDICTION_INTERVAL_MS = 200;
+  const MIDI_CC = 3;
+
   const webcamRef = useRef(null);
 
   const runMoveNet = async () => {
+
+    // Init neural net.
     const detectorConfig = { modelType: poseDetection.movenet.modelType.SINGLEPOSE_THUNDER };
     const detector = await poseDetection.createDetector(
       poseDetection.SupportedModels.MoveNet, detectorConfig
     );
 
+    // Init WebMidi output.
+    await WebMidi.enable();
+    const output = WebMidi.getOutputByName("IAC Driver Bus 1");
+    const channel = output.channels[1];
+
     console.log('Starting setInterval...');
     setInterval(() => {
-      detect(detector);
+      detect(detector, channel);
     }, PREDICTION_INTERVAL_MS);
   };
 
-  const detect = async (detector) => {
+  const detect = async (detector, channel) => {
     const isCamDefined = () => typeof webcamRef.current !== "undefined";
     const isCamNull = () => webcamRef.current == null;
     const isCamReady = () => webcamRef.current.video.readyState === 4;
@@ -42,6 +52,9 @@ function App() {
       if (isKeypointsDefined()) {
         const tmp = calculateHeadRotation(pose);
         setRotation(tmp);
+
+        const midiVal = convertRotationToMidiRange(-tmp);
+        channel.sendControlChange(MIDI_CC, midiVal);
       }
     }
   }
