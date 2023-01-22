@@ -7,15 +7,17 @@ import '@tensorflow/tfjs-backend-webgl';
 import Webcam from 'react-webcam';
 import { WebMidi } from 'webmidi';
 
-import { calculateHeadRotation, convertRotationToMidiRange } from './utilities';
+import { calculateHeadRotation, convertRotationToMidiRange, fold } from './utilities';
 
 function App() {
 
   const [rotation, setRotation] = useState(0);
 
   const INFERENCES_PER_REFRESH_INTERVAL = 1;
-  const PREDICTION_INTERVAL_MS = 200;
-  const MIDI_CC = 3;
+  const PREDICTION_INTERVAL_MS = 50;
+
+  const MIDI_CC_FULLRANGE = 3;
+  const MIDI_CC_FOLDEDRANGE = 4;
 
   const webcamRef = useRef(null);
 
@@ -53,8 +55,13 @@ function App() {
         const tmp = calculateHeadRotation(pose);
         setRotation(tmp);
 
-        const midiVal = convertRotationToMidiRange(-tmp);
-        channel.sendControlChange(MIDI_CC, midiVal);
+        const midiVal = convertRotationToMidiRange(tmp);
+        const foldedVal = fold(midiVal);
+
+        channel.sendControlChange(MIDI_CC_FULLRANGE, Math.round(midiVal));
+
+        // Useful for fully left/right oriented sources.
+        channel.sendControlChange(MIDI_CC_FOLDEDRANGE, Math.round(foldedVal))
       }
     }
   }

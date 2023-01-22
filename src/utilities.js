@@ -1,9 +1,7 @@
 export function convertRotationToMidiRange(rotationValue) {
 
   // Scale to 0 - 127.
-  rotationValue = (rotationValue + 1) * 63.5;
-
-  return Math.round(rotationValue);
+  return rotationValue = (1 - rotationValue) * 63.5;
 }
 
 export function calculateHeadRotation(pose) {
@@ -26,6 +24,10 @@ export function calculateHeadRotation(pose) {
   headRotation = clipBetween(headRotation, -1, 1);
 
   return headRotation;
+}
+
+export function fold(midiVal) {
+  return Math.abs(midiVal - 63.5);
 }
 
 function clipBetween(x, min, max) {
