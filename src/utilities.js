@@ -1,7 +1,4 @@
 export function convertRotationToMidiRange(rotationValue) {
-  // Clamp.
-  rotationValue = Math.min(1, rotationValue);
-  rotationValue = Math.max(-1, rotationValue);
 
   // Scale to 0 - 127.
   rotationValue = (rotationValue + 1) * 63.5;
@@ -26,8 +23,13 @@ export function calculateHeadRotation(pose) {
 
   // Express nose location as normalized [-1, 1] between eyes.
   let headRotation = (nose.x / rightEye.x) - 0.5;
+  headRotation = clipBetween(headRotation, -1, 1);
 
   return headRotation;
+}
+
+function clipBetween(x, min, max) {
+  return Math.max(min, Math.min(x, max));
 }
 
 function subtractKeypoint(minuend, subtrahend) {
