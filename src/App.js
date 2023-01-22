@@ -14,7 +14,7 @@ function App() {
   const [rotation, setRotation] = useState(0);
 
   const INFERENCES_PER_REFRESH_INTERVAL = 1;
-  const PREDICTION_INTERVAL_MS = 50;
+  const PREDICTION_INTERVAL_MS = 5;
 
   const MIDI_CC_FULLRANGE = 3;
   const MIDI_CC_FOLDEDRANGE = 4;
