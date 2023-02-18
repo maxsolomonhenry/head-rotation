@@ -1,4 +1,4 @@
-<REAPER_PROJECT 0.1 "6.63/macOS-arm64" 1676731813
+<REAPER_PROJECT 0.1 "6.63/macOS-arm64" 1676756356
   RIPPLE 0
   GROUPOVERRIDE 0 0 0
   AUTOXFADE 129
@@ -14,9 +14,9 @@
   TIMEMODE 1 5 -1 30 0 0 -1
   VIDEO_CONFIG 0 0 256
   PANMODE 3
-  CURSOR 0
-  ZOOM 2.38113739768174 0 0
-  VZOOMEX 11 405
+  CURSOR 28
+  ZOOM 2.85736487721809 0 0
+  VZOOMEX 11 1575
   USE_REC_CFG 0
   RECMODE 1
   SMPTESYNC 0 30 100 40 1000 300 0 0 1 0 0
@@ -182,336 +182,6 @@
     MIDIOUT -1
     MAINSEND 0 0
   >
-  <TRACK {964BEFC4-37DD-E44E-ADE0-EBAB6C353F57}
-    NAME front
-    PEAKCOL 16576
-    BEAT -1
-    AUTOMODE 0
-    VOLPAN 0.61510571964017 0 -1 -1 1
-    MUTESOLO 0 0 0
-    IPHASE 0
-    PLAYOFFS 0 1
-    ISBUS 0 0
-    BUSCOMP 0 0 0 0 0
-    SHOWINMIX 1 0.6667 0.5 1 0.5 0 -1 0
-    SEL 0
-    REC 1 5088 1 2 0 0 0 0
-    VU 2
-    TRACKHEIGHT 0 0 0 0 0 0
-    INQ 0 0 0 0.5 100 0 0 100
-    NCHAN 2
-    FX 1
-    TRACKID {964BEFC4-37DD-E44E-ADE0-EBAB6C353F57}
-    PERF 0
-    AUXRECV 0 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
-    MIDIOUT -1
-    MAINSEND 0 0
-    HWOUT 16 0 1 0 0 0 0 -1:U -1
-    <FXCHAIN
-      WNDRECT 454 618 785 171
-      SHOW 0
-      LASTSEL 1
-      DOCKED 0
-      BYPASS 1 0 0
-      <JS synthesis/tonegenerator ""
-        -12 -6 1320 0 0 0 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-      >
-      FLOATPOS 504 242 554 225
-      FXID {39198D1B-74B6-314C-A960-9D1C9F5A88B5}
-      WAK 0 0
-      BYPASS 0 0 0
-      <JS utility/volume_pan ""
-        0 5.5 2 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-      >
-      FLOATPOS -1403 687 554 143
-      FXID {9A5BB1BF-8C37-E64E-B69D-3BE0308CDAA8}
-      <PARMENV 1 -100 100 0
-        EGUID {40D60F8C-8B7C-7C49-96C3-DB9D3C35EF58}
-        ACT 1 -1
-        VIS 0 1 1
-        LANEHEIGHT 0 0
-        ARM 0
-        DEFSHAPE 0 -1 -1
-        PT 0 5.5 0
-      >
-      <PROGRAMENV 1 0
-        PARAMBASE 0
-        LFO 0
-        LFOWT 1 1
-        AUDIOCTL 0
-        AUDIOCTLWT 1 1
-        PLINK 0.5 -100 -1 -0.5
-        MIDIPLINK 0 0 176 3
-        MODWND 0 -1162 447 -775 738
-      >
-      WAK 0 0
-    >
-  >
-  <TRACK {BCA59235-9910-2A42-B54F-7130721A97DD}
-    NAME behind
-    PEAKCOL 16576
-    BEAT -1
-    AUTOMODE 0
-    VOLPAN 0.90711685353464 0 -1 -1 1
-    MUTESOLO 0 0 0
-    IPHASE 0
-    PLAYOFFS 0 1
-    ISBUS 0 0
-    BUSCOMP 0 0 0 0 0
-    SHOWINMIX 1 0.6667 0.5 1 0.5 0 -1 0
-    SEL 1
-    REC 1 1 1 2 1 0 0 0
-    VU 2
-    TRACKHEIGHT 0 0 0 0 0 0
-    INQ 0 0 0 0.5 100 0 0 100
-    NCHAN 2
-    FX 1
-    TRACKID {BCA59235-9910-2A42-B54F-7130721A97DD}
-    PERF 0
-    AUXRECV 1 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
-    MIDIOUT -1
-    MAINSEND 0 0
-    HWOUT 16 0 1 0 0 0 0 -1:U -1
-    <FXCHAIN
-      WNDRECT 0 0 785 225
-      SHOW 0
-      LASTSEL 4
-      DOCKED 0
-      BYPASS 1 0 0
-      <JS synthesis/tonegenerator ""
-        -12 -6 1760 0 0 0 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-      >
-      FLOATPOS 0 0 0 0
-      FXID {526E9A7A-3703-D84F-9339-CE1EDA1B7747}
-      WAK 0 0
-      BYPASS 0 0 0
-      <JS utility/volume_pan ""
-        0 5.5 2 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-      >
-      FLOATPOS -717 360 554 143
-      FXID {47D37D7B-437B-EC45-9CD3-B23172DA551C}
-      <PARMENV 1 -100 100 0
-        EGUID {40D60F8C-8B7C-7C49-96C3-DB9D3C35EF58}
-        ACT 1 -1
-        VIS 0 1 1
-        LANEHEIGHT 0 0
-        ARM 0
-        DEFSHAPE 0 -1 -1
-        PT 0 5.5 0
-      >
-      <PROGRAMENV 1 0
-        PARAMBASE 0
-        LFO 0
-        LFOWT 1 1
-        AUDIOCTL 0
-        AUDIOCTLWT 1 1
-        PLINK -0.4 -100 -1 -0.5
-        MIDIPLINK 0 0 176 3
-        MODWND 0 -1191 459 -804 750
-      >
-      WAK 0 0
-      BYPASS 1 0 0
-      <JS loser/3BandEQ ""
-        0 200 0 1000 -17 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-      >
-      FLOATPOS -1686 1158 554 203
-      FXID {69A59326-BABD-1C41-84B5-E9F1132489A6}
-      WAK 0 0
-      BYPASS 1 0 0
-      <AU "AU: AULowpass (Apple)" "Apple: AULowpass" "" 1635083896 1819304307 1634758764
-        6QMAAAAAAAACAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAA+QEAADw/eG1sIHZlcnNpb249IjEuMCIgZW5jb2Rpbmc9IlVURi04Ij8+CjwhRE9D
-        VFlQRSBwbGlzdCBQVUJMSUMgIi0vL0FwcGxlLy9EVEQgUExJU1QgMS4wLy9FTiIgImh0dHA6Ly93d3cuYXBwbGUuY29tL0RURHMvUHJvcGVydHlMaXN0LTEuMC5kdGQi
-        Pgo8cGxpc3QgdmVyc2lvbj0iMS4wIj4KPGRpY3Q+Cgk8a2V5PmRhdGE8L2tleT4KCTxkYXRhPgoJQUFBQUFBQUFBQUFBQUFBQ0FBQUFBRVVXNGRZQUFBQUJOZ0FBQUE9
-        PQoJPC9kYXRhPgoJPGtleT5tYW51ZmFjdHVyZXI8L2tleT4KCTxpbnRlZ2VyPjE2MzQ3NTg3NjQ8L2ludGVnZXI+Cgk8a2V5Pm5hbWU8L2tleT4KCTxzdHJpbmc+VW50
-        aXRsZWQ8L3N0cmluZz4KCTxrZXk+c3VidHlwZTwva2V5PgoJPGludGVnZXI+MTgxOTMwNDMwNzwvaW50ZWdlcj4KCTxrZXk+dHlwZTwva2V5PgoJPGludGVnZXI+MTYz
-        NTA4Mzg5NjwvaW50ZWdlcj4KCTxrZXk+dmVyc2lvbjwva2V5PgoJPGludGVnZXI+MDwvaW50ZWdlcj4KPC9kaWN0Pgo8L3BsaXN0PgoBAAAAAAAAAAAA
-      >
-      FLOATPOS -1686 1105 500 255
-      FXID {5BCCF935-A0D6-1445-BB61-62D9A7B00D62}
-      WAK 0 0
-      BYPASS 0 0 0
-      <JS sstillwell/hpflpf ""
-        490 1000 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-      >
-      FLOATPOS 0 0 0 0
-      FXID {C7574280-7588-2B4B-86EA-3A95560C680A}
-      <PROGRAMENV 1 0
-        PARAMBASE 2722
-        LFO 0
-        LFOWT 1 1
-        AUDIOCTL 0
-        AUDIOCTLWT 1 1
-        PLINK 0.26 -100 -1 -0.36
-        MIDIPLINK 0 0 176 4
-        MODWND 0 -801 422 -414 713
-      >
-      WAK 0 0
-    >
-  >
-  <TRACK {49A270C0-6250-A640-B1B3-4184625A77AD}
-    NAME left
-    PEAKCOL 16576
-    BEAT -1
-    AUTOMODE 0
-    VOLPAN 0.32971657736377 0 -1 -1 1
-    MUTESOLO 0 0 0
-    IPHASE 0
-    PLAYOFFS 0 1
-    ISBUS 0 0
-    BUSCOMP 0 0 0 0 0
-    SHOWINMIX 1 0.6667 0.5 1 0.5 0 -1 0
-    SEL 0
-    REC 1 2 1 2 1 0 0 0
-    VU 2
-    TRACKHEIGHT 0 0 0 0 0 0
-    INQ 0 0 0 0.5 100 0 0 100
-    NCHAN 2
-    FX 1
-    TRACKID {49A270C0-6250-A640-B1B3-4184625A77AD}
-    PERF 0
-    AUXRECV 2 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
-    MIDIOUT -1
-    MAINSEND 0 0
-    HWOUT 16 0 1 0 0 0 0 -1:U -1
-    <FXCHAIN
-      WNDRECT -1144 509 785 177
-      SHOW 0
-      LASTSEL 2
-      DOCKED 0
-      BYPASS 1 0 0
-      <JS synthesis/tonegenerator ""
-        -12 -6 440 0 0 0 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-      >
-      FLOATPOS 0 0 0 0
-      FXID {01E4BD31-F66F-634F-B65C-C568985CB963}
-      WAK 0 0
-      BYPASS 0 0 0
-      <JS utility/volume_pan ""
-        0 5.5 6 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-      >
-      FLOATPOS -717 360 554 143
-      FXID {8F66F2DB-A66A-3B4D-A42B-5A680DED6A78}
-      <PARMENV 1 -100 100 0
-        EGUID {40D60F8C-8B7C-7C49-96C3-DB9D3C35EF58}
-        ACT 1 -1
-        VIS 0 1 1
-        LANEHEIGHT 0 0
-        ARM 0
-        DEFSHAPE 0 -1 -1
-        PT 0 5.5 0
-      >
-      <PROGRAMENV 1 0
-        PARAMBASE 6.2
-        LFO 0
-        LFOWT 1 1
-        AUDIOCTL 0
-        AUDIOCTLWT 1 1
-        PLINK 0.66 -100 -1 -0.69
-        MIDIPLINK 0 0 176 4
-        MODWND 0 -882 568 -495 859
-      >
-      WAK 0 0
-      BYPASS 0 0 0
-      <JS sstillwell/hpflpf ""
-        0 15700 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-      >
-      FLOATPOS 0 0 0 0
-      FXID {15C74E0D-46C7-F244-88F6-7B7F0DF52043}
-      <PROGRAMENV 1 0
-        PARAMBASE 1000
-        LFO 0
-        LFOWT 1 1
-        AUDIOCTL 0
-        AUDIOCTLWT 1 1
-        PLINK -1 -100 -1 -0.71
-        MIDIPLINK 0 0 176 4
-        MODWND 0 -558 368 -171 659
-      >
-      WAK 0 0
-    >
-  >
-  <TRACK {00631419-78A4-8341-AB5C-0DCC5320E505}
-    NAME right
-    PEAKCOL 16576
-    BEAT -1
-    AUTOMODE 0
-    VOLPAN 0.47829056409258 0 -1 -1 1
-    MUTESOLO 0 0 0
-    IPHASE 0
-    PLAYOFFS 0 1
-    ISBUS 0 0
-    BUSCOMP 0 0 0 0 0
-    SHOWINMIX 1 0.6667 0.5 1 0.5 0 -1 0
-    SEL 0
-    REC 1 3 1 2 1 0 0 0
-    VU 2
-    TRACKHEIGHT 0 0 0 0 0 0
-    INQ 0 0 0 0.5 100 0 0 100
-    NCHAN 2
-    FX 1
-    TRACKID {00631419-78A4-8341-AB5C-0DCC5320E505}
-    PERF 0
-    AUXRECV 3 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
-    MIDIOUT -1
-    MAINSEND 0 0
-    HWOUT 16 0 1 0 0 0 0 -1:U -1
-    <FXCHAIN
-      WNDRECT -1151 708 785 177
-      SHOW 0
-      LASTSEL 1
-      DOCKED 0
-      BYPASS 1 0 0
-      <JS synthesis/tonegenerator ""
-        -12 -6 880 0 0 0 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-      >
-      FLOATPOS 0 0 0 0
-      FXID {ADF4FB97-E355-B84C-BECA-DD4ACCC6984C}
-      WAK 0 0
-      BYPASS 0 0 0
-      <JS utility/volume_pan ""
-        0 5.5 6 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-      >
-      FLOATPOS -717 360 554 143
-      FXID {6DE6E9B7-4BC9-6947-9D14-99425CF5FB07}
-      <PARMENV 1 -100 100 0
-        EGUID {40D60F8C-8B7C-7C49-96C3-DB9D3C35EF58}
-        ACT 1 -1
-        VIS 0 1 1
-        LANEHEIGHT 0 0
-        ARM 0
-        DEFSHAPE 0 -1 -1
-        PT 0 5.5 0
-      >
-      <PROGRAMENV 1 0
-        PARAMBASE 0
-        LFO 0
-        LFOWT 1 1
-        AUDIOCTL 0
-        AUDIOCTLWT 1 1
-        PLINK -0.56 -100 -1 -1
-        MIDIPLINK 0 0 176 4
-        MODWND 0 -878 466 -491 757
-      >
-      WAK 0 0
-      BYPASS 0 0 0
-      <JS sstillwell/hpflpf ""
-        0 14900 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-      >
-      FLOATPOS 0 0 0 0
-      FXID {042B9AC2-12CE-FE4F-99CD-C243C8942630}
-      <PROGRAMENV 1 0
-        PARAMBASE 0
-        LFO 0
-        LFOWT 1 1
-        AUDIOCTL 0
-        AUDIOCTLWT 1 1
-        PLINK -0.92 -100 -1 -0.78
-        MIDIPLINK 0 0 176 4
-        MODWND 0 -1306 991 -919 1282
-      >
-      WAK 0 0
-    >
-  >
   <TRACK {806A6E04-A6E6-AB46-A37C-55CB5ABDB33D}
     NAME "blackhole 5"
     PEAKCOL 16576
@@ -607,5 +277,686 @@
     PERF 0
     MIDIOUT -1
     MAINSEND 1 0
+  >
+  <TRACK {7795ED73-6071-B24B-AE59-6BA4321E8894}
+    NAME "blackhole 9"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 -1 0
+    SEL 0
+    REC 1 8 1 2 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {7795ED73-6071-B24B-AE59-6BA4321E8894}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+  >
+  <TRACK {46D6B564-8C72-C34C-8CC6-E08B782B2ECE}
+    NAME "blackhole 10"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 -1 0
+    SEL 0
+    REC 1 9 1 2 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {46D6B564-8C72-C34C-8CC6-E08B782B2ECE}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+  >
+  <TRACK {61EBFAD6-3970-9E4D-B32E-F3858C044B85}
+    NAME "blackhole 11"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 -1 0
+    SEL 0
+    REC 1 10 1 2 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {61EBFAD6-3970-9E4D-B32E-F3858C044B85}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+  >
+  <TRACK {8385914E-92A5-8945-9219-E15FE08ED84E}
+    NAME "blackhole 12"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 -1 0
+    SEL 0
+    REC 1 11 1 2 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {8385914E-92A5-8945-9219-E15FE08ED84E}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+  >
+  <TRACK {49A270C0-6250-A640-B1B3-4184625A77AD}
+    NAME "HT L"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 -1 0
+    SEL 0
+    REC 1 5088 1 2 1 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {49A270C0-6250-A640-B1B3-4184625A77AD}
+    PERF 0
+    AUXRECV 0 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    MIDIOUT -1
+    MAINSEND 0 0
+    HWOUT 16 0 1 0 0 0 0 -1:U -1
+    <FXCHAIN
+      WNDRECT 204 618 785 177
+      SHOW 0
+      LASTSEL 2
+      DOCKED 0
+      BYPASS 1 0 0
+      <JS synthesis/tonegenerator ""
+        -12 -6 440 0 0 0 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+      >
+      FLOATPOS 168 695 554 225
+      FXID {01E4BD31-F66F-634F-B65C-C568985CB963}
+      WAK 0 0
+      BYPASS 0 0 0
+      <JS utility/volume_pan ""
+        0 -79.3 6 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+      >
+      FLOATPOS 351 469 554 143
+      FXID {8F66F2DB-A66A-3B4D-A42B-5A680DED6A78}
+      <PARMENV 1 -100 100 0
+        EGUID {40D60F8C-8B7C-7C49-96C3-DB9D3C35EF58}
+        ACT 1 -1
+        VIS 0 1 1
+        LANEHEIGHT 0 0
+        ARM 0
+        DEFSHAPE 0 -1 -1
+        PT 0 5.5 0
+      >
+      <PROGRAMENV 1 0
+        PARAMBASE 6.2
+        LFO 0
+        LFOWT 1 1
+        AUDIOCTL 0
+        AUDIOCTLWT 1 1
+        PLINK 0.66 -100 -1 -0.69
+        MIDIPLINK 0 0 176 4
+        MODWND 0 -882 568 -495 859
+      >
+      WAK 0 0
+      BYPASS 0 0 0
+      <JS sstillwell/hpflpf ""
+        0 11000 3 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+      >
+      FLOATPOS 0 0 0 0
+      FXID {15C74E0D-46C7-F244-88F6-7B7F0DF52043}
+      <PROGRAMENV 1 0
+        PARAMBASE 1000
+        LFO 0
+        LFOWT 1 1
+        AUDIOCTL 0
+        AUDIOCTLWT 1 1
+        PLINK -0.5 -100 -1 -1
+        MIDIPLINK 0 0 176 4
+        MODWND 0 494 139 881 430
+      >
+      WAK 0 0
+    >
+  >
+  <TRACK {00631419-78A4-8341-AB5C-0DCC5320E505}
+    NAME "HT R"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 -1 0
+    SEL 0
+    REC 1 5088 1 2 1 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {00631419-78A4-8341-AB5C-0DCC5320E505}
+    PERF 0
+    AUXRECV 1 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    MIDIOUT -1
+    MAINSEND 0 0
+    HWOUT 16 0 1 0 0 0 0 -1:U -1
+    <FXCHAIN
+      WNDRECT 251 110 785 253
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 1 0 0
+      <JS synthesis/tonegenerator ""
+        -12 -6 880 0 0 0 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+      >
+      FLOATPOS 0 0 0 0
+      FXID {ADF4FB97-E355-B84C-BECA-DD4ACCC6984C}
+      WAK 0 0
+      BYPASS 0 0 0
+      <JS utility/volume_pan ""
+        0 100 6 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+      >
+      FLOATPOS 372 455 554 143
+      FXID {6DE6E9B7-4BC9-6947-9D14-99425CF5FB07}
+      <PARMENV 1 -100 100 0
+        EGUID {40D60F8C-8B7C-7C49-96C3-DB9D3C35EF58}
+        ACT 1 -1
+        VIS 0 1 1
+        LANEHEIGHT 0 0
+        ARM 0
+        DEFSHAPE 0 -1 -1
+        PT 0 5.5 0
+      >
+      <PROGRAMENV 1 0
+        PARAMBASE 0
+        LFO 0
+        LFOWT 1 1
+        AUDIOCTL 0
+        AUDIOCTLWT 1 1
+        PLINK -0.56 -100 -1 -1
+        MIDIPLINK 0 0 176 4
+        MODWND 0 -878 466 -491 757
+      >
+      WAK 0 0
+      BYPASS 0 0 0
+      <JS sstillwell/hpflpf ""
+        0 12200 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+      >
+      FLOATPOS 569 318 554 143
+      FXID {042B9AC2-12CE-FE4F-99CD-C243C8942630}
+      <PROGRAMENV 1 0
+        PARAMBASE 0
+        LFO 0
+        LFOWT 1 1
+        AUDIOCTL 0
+        AUDIOCTLWT 1 1
+        PLINK -0.61 -100 -1 -1
+        MIDIPLINK 0 0 176 4
+        MODWND 0 1093 310 1480 601
+      >
+      WAK 0 0
+    >
+  >
+  <TRACK {964BEFC4-37DD-E44E-ADE0-EBAB6C353F57}
+    NAME "HT F"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 -1 0
+    SEL 0
+    REC 1 5088 1 2 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {964BEFC4-37DD-E44E-ADE0-EBAB6C353F57}
+    PERF 0
+    AUXRECV 2 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    MIDIOUT -1
+    MAINSEND 0 0
+    HWOUT 16 0 1 0 0 0 0 -1:U -1
+    <FXCHAIN
+      WNDRECT 561 618 785 171
+      SHOW 0
+      LASTSEL 1
+      DOCKED 0
+      BYPASS 1 0 0
+      <JS synthesis/tonegenerator ""
+        -12 -6 1320 0 0 0 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+      >
+      FLOATPOS 504 242 554 225
+      FXID {39198D1B-74B6-314C-A960-9D1C9F5A88B5}
+      WAK 0 0
+      BYPASS 0 0 0
+      <JS utility/volume_pan ""
+        0 9.8 2 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+      >
+      FLOATPOS 278 247 554 143
+      FXID {9A5BB1BF-8C37-E64E-B69D-3BE0308CDAA8}
+      <PARMENV 1 -100 100 0
+        EGUID {40D60F8C-8B7C-7C49-96C3-DB9D3C35EF58}
+        ACT 1 -1
+        VIS 0 1 1
+        LANEHEIGHT 0 0
+        ARM 0
+        DEFSHAPE 0 -1 -1
+        PT 0 5.5 0
+      >
+      <PROGRAMENV 1 0
+        PARAMBASE 0
+        LFO 0
+        LFOWT 1 1
+        AUDIOCTL 0
+        AUDIOCTLWT 1 1
+        PLINK 0.5 -100 -1 -0.5
+        MIDIPLINK 0 0 176 3
+        MODWND 0 -1162 447 -775 738
+      >
+      WAK 0 0
+    >
+  >
+  <TRACK {BCA59235-9910-2A42-B54F-7130721A97DD}
+    NAME "HT B"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 -1 0
+    SEL 0
+    REC 1 5088 1 2 1 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {BCA59235-9910-2A42-B54F-7130721A97DD}
+    PERF 0
+    AUXRECV 3 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    MIDIOUT -1
+    MAINSEND 0 0
+    HWOUT 16 0 1 0 0 0 0 -1:U -1
+    <FXCHAIN
+      WNDRECT 781 592 785 225
+      SHOW 0
+      LASTSEL 4
+      DOCKED 0
+      BYPASS 1 0 0
+      <JS synthesis/tonegenerator ""
+        -12 -6 1760 0 0 0 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+      >
+      FLOATPOS 486 532 554 225
+      FXID {526E9A7A-3703-D84F-9339-CE1EDA1B7747}
+      WAK 0 0
+      BYPASS 0 0 0
+      <JS utility/volume_pan ""
+        0 2 2 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+      >
+      FLOATPOS 807 446 554 143
+      FXID {47D37D7B-437B-EC45-9CD3-B23172DA551C}
+      <PARMENV 1 -100 100 0
+        EGUID {40D60F8C-8B7C-7C49-96C3-DB9D3C35EF58}
+        ACT 1 -1
+        VIS 0 1 1
+        LANEHEIGHT 0 0
+        ARM 0
+        DEFSHAPE 0 -1 -1
+        PT 0 5.5 0
+      >
+      <PROGRAMENV 1 0
+        PARAMBASE 0
+        LFO 0
+        LFOWT 1 1
+        AUDIOCTL 0
+        AUDIOCTLWT 1 1
+        PLINK -0.4 -100 -1 -0.5
+        MIDIPLINK 0 0 176 3
+        MODWND 0 -1191 459 -804 750
+      >
+      WAK 0 0
+      BYPASS 1 0 0
+      <JS loser/3BandEQ ""
+        0 200 0 1000 -17 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+      >
+      FLOATPOS -1686 1158 554 203
+      FXID {69A59326-BABD-1C41-84B5-E9F1132489A6}
+      WAK 0 0
+      BYPASS 1 0 0
+      <AU "AU: AULowpass (Apple)" "Apple: AULowpass" "" 1635083896 1819304307 1634758764
+        6QMAAAAAAAACAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAA+QEAADw/eG1sIHZlcnNpb249IjEuMCIgZW5jb2Rpbmc9IlVURi04Ij8+CjwhRE9D
+        VFlQRSBwbGlzdCBQVUJMSUMgIi0vL0FwcGxlLy9EVEQgUExJU1QgMS4wLy9FTiIgImh0dHA6Ly93d3cuYXBwbGUuY29tL0RURHMvUHJvcGVydHlMaXN0LTEuMC5kdGQi
+        Pgo8cGxpc3QgdmVyc2lvbj0iMS4wIj4KPGRpY3Q+Cgk8a2V5PmRhdGE8L2tleT4KCTxkYXRhPgoJQUFBQUFBQUFBQUFBQUFBQ0FBQUFBRVVXNGRZQUFBQUJOZ0FBQUE9
+        PQoJPC9kYXRhPgoJPGtleT5tYW51ZmFjdHVyZXI8L2tleT4KCTxpbnRlZ2VyPjE2MzQ3NTg3NjQ8L2ludGVnZXI+Cgk8a2V5Pm5hbWU8L2tleT4KCTxzdHJpbmc+VW50
+        aXRsZWQ8L3N0cmluZz4KCTxrZXk+c3VidHlwZTwva2V5PgoJPGludGVnZXI+MTgxOTMwNDMwNzwvaW50ZWdlcj4KCTxrZXk+dHlwZTwva2V5PgoJPGludGVnZXI+MTYz
+        NTA4Mzg5NjwvaW50ZWdlcj4KCTxrZXk+dmVyc2lvbjwva2V5PgoJPGludGVnZXI+MDwvaW50ZWdlcj4KPC9kaWN0Pgo8L3BsaXN0PgoBAAAAAAAAAAAA
+      >
+      FLOATPOS 368 267 500 255
+      FXID {5BCCF935-A0D6-1445-BB61-62D9A7B00D62}
+      WAK 0 0
+      BYPASS 0 0 0
+      <JS sstillwell/hpflpf ""
+        100 3000 4 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+      >
+      FLOATPOS 0 0 0 0
+      FXID {C7574280-7588-2B4B-86EA-3A95560C680A}
+      <PROGRAMENV 1 0
+        PARAMBASE 2722
+        LFO 0
+        LFOWT 1 1
+        AUDIOCTL 0
+        AUDIOCTLWT 1 1
+        PLINK 0.1 -100 -1 0.1
+        MIDIPLINK 0 0 176 4
+        MODWND 0 737 398 1124 689
+      >
+      WAK 0 0
+    >
+  >
+  <TRACK {03D964A3-5A21-034D-A7C0-60A5910891A8}
+    NAME "SPKR L"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 -1 0
+    SEL 0
+    REC 1 -1 1 2 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {03D964A3-5A21-034D-A7C0-60A5910891A8}
+    PERF 0
+    AUXRECV 4 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    MIDIOUT -1
+    MAINSEND 0 0
+    HWOUT 1042 0 1 0 0 0 0 -1:U -1
+    <FXCHAIN
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+    >
+  >
+  <TRACK {11FBFDD6-A7FC-124B-BA5E-08C7B7305264}
+    NAME "SPKR R"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 -1 0
+    SEL 1
+    REC 1 -1 1 2 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {11FBFDD6-A7FC-124B-BA5E-08C7B7305264}
+    PERF 0
+    AUXRECV 5 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    MIDIOUT -1
+    MAINSEND 0 0
+    HWOUT 1043 0 1 0 0 0 0 -1:U -1
+    <FXCHAIN
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+    >
+  >
+  <TRACK {3ED970A8-6172-5A43-A538-5DD4F718C551}
+    NAME "SPKR F"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 -1 0
+    SEL 0
+    REC 1 -1 1 2 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {3ED970A8-6172-5A43-A538-5DD4F718C551}
+    PERF 0
+    AUXRECV 6 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    MIDIOUT -1
+    MAINSEND 0 0
+    HWOUT 1044 0 1 0 0 0 0 -1:U -1
+    <FXCHAIN
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+    >
+  >
+  <TRACK {C6A88BF0-9576-9046-AB60-BDB32E1897B9}
+    NAME "SPKR B"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 -1 0
+    SEL 0
+    REC 1 -1 1 2 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {C6A88BF0-9576-9046-AB60-BDB32E1897B9}
+    PERF 0
+    AUXRECV 7 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    MIDIOUT -1
+    MAINSEND 0 0
+    HWOUT 1045 0 1 0 0 0 0 -1:U -1
+    <FXCHAIN
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+    >
+  >
+  <TRACK {9C521555-47AF-6D45-B053-CAA62BB03807}
+    NAME "flat L"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 -1 0
+    SEL 0
+    REC 1 -1 1 2 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {9C521555-47AF-6D45-B053-CAA62BB03807}
+    PERF 0
+    AUXRECV 8 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    MIDIOUT -1
+    MAINSEND 0 0
+    HWOUT 1040 0 1 0 0 0 0 -1:U -1
+    <FXCHAIN
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+    >
+  >
+  <TRACK {992160EB-8882-7F4B-9C82-EACEFFAC5DDC}
+    NAME "flat R"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 -1 0
+    SEL 0
+    REC 1 -1 1 2 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {992160EB-8882-7F4B-9C82-EACEFFAC5DDC}
+    PERF 0
+    AUXRECV 9 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    MIDIOUT -1
+    MAINSEND 0 0
+    HWOUT 1041 0 1 0 0 0 0 -1:U -1
+    <FXCHAIN
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+    >
+  >
+  <TRACK {85C5BBED-2192-484F-ADA6-8785384603E6}
+    NAME "flat F"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 -1 0
+    SEL 0
+    REC 1 -1 1 2 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {85C5BBED-2192-484F-ADA6-8785384603E6}
+    PERF 0
+    AUXRECV 10 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    MIDIOUT -1
+    MAINSEND 0 0
+    HWOUT 16 0 1 0 0 0 0 -1:U -1
+    <FXCHAIN
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+    >
+  >
+  <TRACK {16A9F035-11CB-444C-8B27-8823822BF44F}
+    NAME "flat B"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 -1 0
+    SEL 0
+    REC 1 -1 1 2 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {16A9F035-11CB-444C-8B27-8823822BF44F}
+    PERF 0
+    AUXRECV 11 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    MIDIOUT -1
+    MAINSEND 0 0
+    HWOUT 16 0 1 0 0 0 0 -1:U -1
+    <FXCHAIN
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <JS sstillwell/hpflpf ""
+        100 3000 4 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+      >
+      FLOATPOS 921 338 554 143
+      FXID {F6CE520D-7DB8-B440-8302-933E449F3050}
+      WAK 0 0
+    >
   >
 >

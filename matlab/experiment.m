@@ -12,26 +12,30 @@ end
 
 sr = 48000;
 blockSize = 4096;
-numChannels = 17;
+numChannels = 12;
+gainDb = -30;
 
-testDurationSeconds = 60 * 5;
+whichChannel = 12;
+
+testDurationSeconds = 1;
 time = 0:1/sr:testDurationSeconds;
 time = time.';
 
-f0 = [440, 660, 880, 1320];
-x = cos(2 * pi * f0 .* time);
+numSamples = length(time);
+x = db2mag(gainDb) * pinknoise(numSamples, 1);
 
-deviceWriter = audioDeviceWriter(sr, "Device", "Aggregate Device", "BufferSize", blockSize);
+deviceWriter = audioDeviceWriter(sr, "Device", "Aggregate Device", "BufferSize", blockSize, "ChannelMappingSource","Property");
+deviceWriter.ChannelMapping = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 
 idxIn = 1;
 idxOut = idxIn + blockSize - 1;
 
 buffer = zeros(blockSize, numChannels);
 
-while idxIn <= length(x)
+while idxOut <= length(x)
     
     buffer = buffer * 0;
-    buffer(:, 1:4) = x(idxIn:idxOut, :);
+    buffer(:, whichChannel) = x(idxIn:idxOut, :);
 
     deviceWriter(buffer);
 
