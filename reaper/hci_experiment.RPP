@@ -1,4 +1,4 @@
-<REAPER_PROJECT 0.1 "6.63/macOS-arm64" 1674443218
+<REAPER_PROJECT 0.1 "6.63/macOS-arm64" 1676731813
   RIPPLE 0
   GROUPOVERRIDE 0 0 0
   AUTOXFADE 129
@@ -16,7 +16,7 @@
   PANMODE 3
   CURSOR 0
   ZOOM 2.38113739768174 0 0
-  VZOOMEX 11 0
+  VZOOMEX 11 405
   USE_REC_CFG 0
   RECMODE 1
   SMPTESYNC 0 30 100 40 1000 300 0 0 1 0 0
@@ -205,7 +205,8 @@
     PERF 0
     AUXRECV 0 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
     MIDIOUT -1
-    MAINSEND 1 0
+    MAINSEND 0 0
+    HWOUT 16 0 1 0 0 0 0 -1:U -1
     <FXCHAIN
       WNDRECT 454 618 785 171
       SHOW 0
@@ -215,12 +216,12 @@
       <JS synthesis/tonegenerator ""
         -12 -6 1320 0 0 0 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
       >
-      FLOATPOS -1686 1135 554 225
+      FLOATPOS 504 242 554 225
       FXID {39198D1B-74B6-314C-A960-9D1C9F5A88B5}
       WAK 0 0
       BYPASS 0 0 0
       <JS utility/volume_pan ""
-        0 -34.3 2 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+        0 5.5 2 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
       >
       FLOATPOS -1403 687 554 143
       FXID {9A5BB1BF-8C37-E64E-B69D-3BE0308CDAA8}
@@ -258,7 +259,7 @@
     ISBUS 0 0
     BUSCOMP 0 0 0 0 0
     SHOWINMIX 1 0.6667 0.5 1 0.5 0 -1 0
-    SEL 0
+    SEL 1
     REC 1 1 1 2 1 0 0 0
     VU 2
     TRACKHEIGHT 0 0 0 0 0 0
@@ -269,9 +270,10 @@
     PERF 0
     AUXRECV 1 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
     MIDIOUT -1
-    MAINSEND 1 0
+    MAINSEND 0 0
+    HWOUT 16 0 1 0 0 0 0 -1:U -1
     <FXCHAIN
-      WNDRECT -1324 714 785 225
+      WNDRECT 0 0 785 225
       SHOW 0
       LASTSEL 4
       DOCKED 0
@@ -358,7 +360,7 @@
     ISBUS 0 0
     BUSCOMP 0 0 0 0 0
     SHOWINMIX 1 0.6667 0.5 1 0.5 0 -1 0
-    SEL 1
+    SEL 0
     REC 1 2 1 2 1 0 0 0
     VU 2
     TRACKHEIGHT 0 0 0 0 0 0
@@ -369,7 +371,8 @@
     PERF 0
     AUXRECV 2 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
     MIDIOUT -1
-    MAINSEND 1 0
+    MAINSEND 0 0
+    HWOUT 16 0 1 0 0 0 0 -1:U -1
     <FXCHAIN
       WNDRECT -1144 509 785 177
       SHOW 0
@@ -450,7 +453,8 @@
     PERF 0
     AUXRECV 3 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
     MIDIOUT -1
-    MAINSEND 1 0
+    MAINSEND 0 0
+    HWOUT 16 0 1 0 0 0 0 -1:U -1
     <FXCHAIN
       WNDRECT -1151 708 785 177
       SHOW 0

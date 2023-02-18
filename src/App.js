@@ -13,7 +13,6 @@ function App() {
 
   const [rotation, setRotation] = useState(0);
 
-  const INFERENCES_PER_REFRESH_INTERVAL = 1;
   const PREDICTION_INTERVAL_MS = 5;
 
   const MIDI_CC_FULLRANGE = 3;
@@ -31,6 +30,7 @@ function App() {
 
     // Init WebMidi output.
     await WebMidi.enable();
+
     const output = WebMidi.getOutputByName("IAC Driver Bus 1");
     const channel = output.channels[1];
 
