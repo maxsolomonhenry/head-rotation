@@ -15,7 +15,7 @@ blockSize = 4096;
 numChannels = 12;
 gainDb = -30;
 
-whichChannels = [1, 3];
+whichChannels = [9, 10];
 
 testDurationSeconds = 5;
 time = 0:1/sr:testDurationSeconds;
@@ -24,8 +24,10 @@ time = time.';
 numSamples = length(time);
 xPink = db2mag(gainDb) * pinknoise(numSamples, 1);
 
-deviceWriter = audioDeviceWriter(sr, "Device", "Aggregate Device", "BufferSize", blockSize, "ChannelMappingSource","Property");
+deviceWriter = audioDeviceWriter(sr, "Device", 'Head rotation', "BufferSize", blockSize, "ChannelMappingSource","Property");
 deviceWriter.ChannelMapping = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+
+x = db2mag(-30) * pinknoise(5 * sr, 1);
 
 idxIn = 1;
 idxOut = idxIn + blockSize - 1;

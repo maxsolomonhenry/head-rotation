@@ -1,48 +1,23 @@
 clc; clear; close all;
 
-desiredOutput = "Aggregate Device (Core Audio)";
-devices = audiodevinfo;
+addpath(genpath('.'));
 
-for i = 1:numel(devices.output.Name)
-    if strcmp(devices.output(i).Name, desiredOutput)
-        deviceId = devices.output(i).ID;
-        break
-    end
-end
-
+whichDevice = 'Head rotation';
 sr = 48000;
 blockSize = 4096;
 numChannels = 12;
-
-deviceWriter = audioDeviceWriter(sr, "Device", "Aggregate Device", "BufferSize", blockSize, "ChannelMappingSource","Property");
-deviceWriter.ChannelMapping = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+gainDb = -30;
 
 burstDurSecs = 0.04;
 stepDurSecs = 0.1;
 numRepeats = 5;
+
+player = Player(whichDevice, blockSize, sr);
 generator = StimulusGenerator(numChannels, burstDurSecs, stepDurSecs, numRepeats, sr);
 
-gainDb = -30;
 
-idxIn = 1;
-idxOut = idxIn + blockSize - 1;
-
-buffer = zeros(blockSize, numChannels);
-
-while idxOut <= length(x)
-    
-    buffer = buffer * 0;
-
-    for channel = whichChannels
-        buffer(:, channel) = x(idxIn:idxOut, :);
-    end
-
-    deviceWriter(buffer);
-
-    idxIn = idxIn + blockSize;
-    idxOut = idxOut + blockSize;
-
-end
+x = db2mag(gainDb) * generator.makeStatic([1, 6]);
+player.play(x)
 
 % Load one row at a time. (row has playback files, routing, and ground
 % truth answer.
