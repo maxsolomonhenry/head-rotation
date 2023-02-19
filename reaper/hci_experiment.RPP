@@ -1,4 +1,4 @@
-<REAPER_PROJECT 0.1 "6.63/macOS-arm64" 1676768917
+<REAPER_PROJECT 0.1 "6.63/macOS-arm64" 1676825632
   RIPPLE 0
   GROUPOVERRIDE 0 0 0
   AUTOXFADE 129
@@ -413,7 +413,7 @@
       WAK 0 0
       BYPASS 0 0 0
       <JS utility/volume_pan ""
-        0 -80.4 6 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+        0 -81.4 6 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
       >
       FLOATPOS 351 469 554 143
       FXID {8F66F2DB-A66A-3B4D-A42B-5A680DED6A78}
@@ -439,9 +439,9 @@
       WAK 0 0
       BYPASS 0 0 0
       <JS sstillwell/hpflpf ""
-        0 11100 3 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+        0 11200 3 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
       >
-      FLOATPOS 0 0 0 0
+      FLOATPOS 42 894 554 143
       FXID {15C74E0D-46C7-F244-88F6-7B7F0DF52043}
       <PROGRAMENV 1 0
         PARAMBASE 1000
@@ -451,7 +451,7 @@
         AUDIOCTLWT 1 1
         PLINK -0.5 -100 -1 -1
         MIDIPLINK 0 0 176 4
-        MODWND 0 494 139 881 430
+        MODWND 0 165 494 552 785
       >
       WAK 0 0
     >
@@ -482,9 +482,9 @@
     MAINSEND 0 0
     HWOUT 16 0 1 0 0 0 0 -1:U -1
     <FXCHAIN
-      WNDRECT 251 110 785 253
+      WNDRECT 319 342 785 177
       SHOW 0
-      LASTSEL 0
+      LASTSEL 2
       DOCKED 0
       BYPASS 1 0 0
       <JS synthesis/tonegenerator ""
@@ -521,9 +521,9 @@
       WAK 0 0
       BYPASS 0 0 0
       <JS sstillwell/hpflpf ""
-        0 12300 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+        0 10200 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
       >
-      FLOATPOS 569 318 554 143
+      FLOATPOS 735 802 554 143
       FXID {042B9AC2-12CE-FE4F-99CD-C243C8942630}
       <PROGRAMENV 1 0
         PARAMBASE 0
@@ -531,9 +531,9 @@
         LFOWT 1 1
         AUDIOCTL 0
         AUDIOCTLWT 1 1
-        PLINK -0.61 -100 -1 -1
+        PLINK -0.5 -100 -1 -1
         MIDIPLINK 0 0 176 4
-        MODWND 0 1093 310 1480 601
+        MODWND 0 855 487 1242 778
       >
       WAK 0 0
     >
@@ -933,7 +933,7 @@
     ISBUS 0 0
     BUSCOMP 0 0 0 0 0
     SHOWINMIX 1 0.6667 0.5 1 0.5 0 -1 0
-    SEL 1
+    SEL 0
     REC 1 -1 1 2 0 0 0 0
     VU 2
     TRACKHEIGHT 0 0 0 0 0 0

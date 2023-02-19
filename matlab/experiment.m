@@ -2,9 +2,10 @@ clc; clear; close all; fclose all;
 
 addpath(genpath('.'));
 
-NUMDEBUG = 2;
+NUMDEBUG = inf;
 
 datadir = "data/";
+
 
 whichDevice = 'Head rotation';
 sr = 48000;
@@ -28,11 +29,11 @@ participantId = inputdlg("Participant ID:");
 dateTime = datestr(now, 'yymmdd_HHMM');
 
 % Create the file name
-fname = join(['PID_', participantId{:}, '_', dateTime, '.csv']);
+fname = join([participantId{:}, '_', dateTime, '.csv']);
 
 fpath = fullfile(datadir, fname);
 fid = fopen(fpath, 'w');
-fprintf(fid, "participantId,trialId,outputs,isRhythmic,perceivedDirection,perceivedSource\n");
+fprintf(fid, "participantId,trialId,outputs,isRhythmic,perceivedDirection,perceivedRealism, perceivedSource\n");
 
 f = waitbar(0, sprintf("Experiment %d...", i));
 
@@ -62,9 +63,10 @@ for i = 1:length(whichExperiments)
         player.play(x);
 
         perceivedDirection = forcedChoiceAnswer("Which direction did that come from?",  whichChoices{i});
-        perceivedSource = forcedChoiceAnswer("Was that headphones or speakers?", ["h", "s"]);
+        perceivedRealism = forcedChoiceAnswer("Rate the acoustic realism: 1-Bad, 2-Poor, 3-Fair, 4-Good, 5-Excellent)", ["1", "2", "3", "4", "5"]);
+        perceivedSource = forcedChoiceAnswer("What was the source, speakers or headphones?", ["s", "h"]);
 
-        fprintf(fid, "%s,%d,[%s],%d,%s,%s\n", participantId{:}, trialId, join(num2str(outputs), ","), isRhythmic, perceivedDirection, perceivedSource);
+        fprintf(fid, "%s,%d,[%s],%d,%s,%s, %s\n", participantId{:}, trialId, join(num2str(outputs), ","), isRhythmic, perceivedDirection, perceivedRealism, perceivedSource);
 
     end
 
