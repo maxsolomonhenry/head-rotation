@@ -2,7 +2,7 @@ clc; clear; close all;
 
 addpath(genpath('.'));
 
-NUMDEBUG = 4;
+NUMDEBUG = 2;
 
 whichDevice = 'Head rotation';
 sr = 48000;
@@ -51,5 +51,12 @@ for i = 1:length(whichExperiments)
 
     end
 
+    waitbar(1, f, "Experiment complete. Press any key to continue...");
+    pause();
+
 end
+
+waitbar(1, f, "Done! Press any key to close...");
+pause();
+close(f);
 
