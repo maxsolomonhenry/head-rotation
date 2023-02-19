@@ -26,14 +26,30 @@ classdef StimulusGenerator
 
         end
 
-        function x = makeRhythmic(obj, idxTarget, idxMasker)
+        function x = make(obj, whichChannels, isRhythmic)
+
+            if isRhythmic
+                x = obj.makeRhythmic(whichChannels);
+            else
+                x = obj.makeStatic(whichChannels);
+            end
+
+        end
+
+        function x = makeRhythmic(obj, whichChannels)
+
+            idxTarget = whichChannels(1);
+            idxMasker = whichChannels(2);
 
             [xTarget, xMasker] = obj.makeTargetAndMasker();
 
             x = zeros(obj.numSamples, obj.numChannels);
 
             x(:, idxTarget) = xTarget;
-            x(:, idxMasker) = xMasker;
+
+            % Additive in case target and masker are the same,
+            % ("one-source" condition).
+            x(:, idxMasker) = x(:, idxMasker) + xMasker;
 
         end
 
