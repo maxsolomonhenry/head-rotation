@@ -1,4 +1,4 @@
-clc; clear; close all;
+clc; clear; close all; fclose all;
 
 addpath(genpath('.'));
 
@@ -23,16 +23,21 @@ generator = StimulusGenerator(numChannels, burstDurSecs, stepDurSecs, numRhythmR
 
 whichExperiments = ["source", "combined"];
 
-partipantId = inputdlg("Participant ID:");
+participantId = inputdlg("Participant ID:");
 
 dateTime = datestr(now, 'yymmdd_HHMM');
 
 % Create the file name
-fileName = ['PID_', participantId, '_', dateTime, '.txt'];
+fname = join(['PID_', participantId{:}, '_', dateTime, '.csv']);
 
-fpath = 
+fpath = fullfile(datadir, fname);
+fid = fopen(fpath, 'w');
+fprintf(fid, "participantId,trialId,outputs,isRhythmic,perceivedDirection,perceivedSource");
 
 f = waitbar(0, sprintf("Experiment %d...", i));
+
+whichChoices = {["l", "r", "f", "b"], ["fl", "fr", "bl", "br"]};
+
 for i = 1:length(whichExperiments)
 
     df = makeStimulusTable(whichExperiments(i), numTrialRepeats);
@@ -56,8 +61,10 @@ for i = 1:length(whichExperiments)
         
         player.play(x);
 
-        response1 = inputdlg("Which direction (l/r/f/b) (fl/fr/bl/br)?: ");
-        response2 = inputdlb("Was that headphones or speakers (h/s)?: ");
+        perceivedDirection = forcedChoiceAnswer("Which direction did that come from?",  whichChoices{i});
+        perceivedSource = forcedChoiceAnswer("Was that headphones or speakers?", ["h", "s"]);
+
+        fprintf(fid, "%s,%d,[%s],%d,%s,%s\n", participantId{:}, trialId, join(num2str(outputs), ","), isRhythmic, perceivedDirection, perceivedSource);
 
     end
 
@@ -65,6 +72,9 @@ for i = 1:length(whichExperiments)
     pause();
 
 end
+
+fclose(fid);
+fprintf("Results saved to: %s\n", fpath);
 
 waitbar(1, f, "Done! Press any key to close...");
 pause();
