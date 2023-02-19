@@ -6,7 +6,6 @@ NUMDEBUG = inf;
 
 datadir = "data/";
 
-
 whichDevice = 'Head rotation';
 sr = 48000;
 blockSize = 4096;
