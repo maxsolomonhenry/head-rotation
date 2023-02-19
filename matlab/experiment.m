@@ -32,7 +32,7 @@ fname = join(['PID_', participantId{:}, '_', dateTime, '.csv']);
 
 fpath = fullfile(datadir, fname);
 fid = fopen(fpath, 'w');
-fprintf(fid, "participantId,trialId,outputs,isRhythmic,perceivedDirection,perceivedSource");
+fprintf(fid, "participantId,trialId,outputs,isRhythmic,perceivedDirection,perceivedSource\n");
 
 f = waitbar(0, sprintf("Experiment %d...", i));
 
