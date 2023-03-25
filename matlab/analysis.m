@@ -34,6 +34,10 @@ xticklabels(["Bad", "Poor", "Fair", "Good", "Excellent"]);
 grid("on");
 ylabel("Count");
 
+thing = [[df.condition{:}].', [df.playbackDirection{:}]' == [df.perceivedDirection{:}]'];
+mean(thing(thing(:, 1) == "flat", 2) == "true")
+
+
 function y = getplaybackdirection(x)
 
     for i = 1:length(x)
