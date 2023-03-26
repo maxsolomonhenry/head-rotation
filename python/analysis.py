@@ -35,6 +35,8 @@ def main():
     # Add a legend for the participant colors
     plt.legend(loc='lower right', borderaxespad=0.5)
 
+    plt.savefig('figs/boxplot_perceived_realism.png', dpi=300)
+
     # Create a confusion matrix for each condition
     conditions = ['flat', 'engine', 'speakers']
     confusion_matrices = {}
@@ -62,6 +64,8 @@ def main():
 
     plt.tight_layout()
 
+    plt.savefig('figs/confusion_matrix_heatmaps.png', dpi=300)
+
     plt.figure(figsize=(9, 6))
 
     # Filter the dataframe to keep rows with perceivedSource == 's' and condition in ['Speakers', 'Engine', 'Flat']
@@ -73,6 +77,8 @@ def main():
     # Set plot title and labels
     plt.xlabel('condition')
     plt.ylabel('percieved as speakers (count)')
+
+    plt.savefig('figs/count_plot_perceived_as_speakers.png', dpi=300)
 
     # plt.figure(figsize=(9, 6))
     # Create a histogram for each condition
@@ -86,11 +92,13 @@ def main():
             continue
         sns.histplot(data=condition_data, x='perceivedRealism', bins=[1, 2, 3, 4, 5, 6], color=colors[i], alpha=0.5, label=condition)
 
-
     # Set plot title and labels
     plt.xlabel("perceived realism")
     plt.ylabel("count")
     plt.legend()
+
+    plt.savefig('figs/histogram_perceived_realism.png', dpi=300)
+
 
     # Calculate the modified MRR and accuracy for each condition
     conditions = ['flat', 'engine', 'speakers']
