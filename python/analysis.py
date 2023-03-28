@@ -53,16 +53,23 @@ def main():
         confusion_matrices[condition] = confusion_matrix
 
     # Plot the heatmaps
-    fig, axes = plt.subplots(1, 3, figsize=(18, 5))
+    fig, axes = plt.subplots(2, 2, figsize=(12, 10))
+
+    # Remove the fourth subplot (bottom-right corner)
+    axes[1, 1].set_axis_off()
+
+    # Flatten the axes array for easier iteration
+    axes_flat = axes.flatten()
 
     for i, condition in enumerate(conditions):
         if condition not in confusion_matrices:
             continue
-        ax = axes[i]
+        ax = axes_flat[i]
         sns.heatmap(confusion_matrices[condition], annot=True, fmt='.2f', cmap='coolwarm', cbar=False, ax=ax, linewidths=0.01)
         ax.set_title(condition, y=-0.2, x=0.5)
 
     plt.tight_layout()
+
 
     plt.savefig('figs/confusion_matrix_heatmaps.png', dpi=300)
 
@@ -87,6 +94,9 @@ def main():
     fig, ax = plt.subplots(figsize=(8, 6))
     for i, condition in enumerate(conditions):
         condition_data = df[df['condition'] == condition]
+
+        print(condition, np.mean(condition_data['perceivedRealism']))
+
         if condition_data.empty:
             print(f"No data available for condition: {condition}")
             continue
